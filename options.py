@@ -18,6 +18,7 @@ def parse_common_args(parser):
 def parse_train_args(parser):
     parser = parse_common_args(parser)
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
+    parser.add_argument('--seed', type=int, default=42, help='train seed')
     parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                         help='momentum for sgd, alpha parameter for adam')
     parser.add_argument('--beta', default=0.999, type=float, metavar='M',
